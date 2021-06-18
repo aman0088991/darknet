@@ -1,5 +1,5 @@
-GPU=0
-CUDNN=0
+GPU=1
+CUDNN=1
 OPENCV=0
 OPENMP=0
 DEBUG=0
@@ -32,6 +32,7 @@ CFLAGS=-Wall -Wno-unused-result -Wno-unknown-pragmas -Wfatal-errors -fPIC
 ifeq ($(OPENMP), 1) 
 CFLAGS+= -fopenmp
 endif
+
 
 ifeq ($(DEBUG), 1) 
 OPTS=-O0 -g
